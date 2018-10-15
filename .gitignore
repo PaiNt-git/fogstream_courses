@@ -1,6 +1,7 @@
 .project
 .pydevproject
 .hgignore
+.settings
 .idea
 *.pyc
 *.project
