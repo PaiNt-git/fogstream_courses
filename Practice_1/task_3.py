@@ -37,7 +37,7 @@ if __name__ == '__main__':
 
     ninput = None
     while ninput is None:
-        ninput = input('Ведите номер урока (целое 1..10):\n')
+        ninput = input('Ведите номер урока (целое 1..{}):\n'.format(MAX_LESSONS_DAY))
         try:
             ninput = int(ninput)
             if ninput < 1 or ninput > 10:
