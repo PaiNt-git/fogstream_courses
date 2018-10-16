@@ -12,13 +12,11 @@ MOSCOW_LENGTH = 109.0
 
 
 def main(v, t):
-    sign = -1 if (abs(v) != v) else 1
-
-    l = v * t
+    l = abs(v * t)
 
     lemainder = l % MOSCOW_LENGTH
 
-    return sign * int(lemainder)
+    return int(lemainder) if v >= 0 else MOSCOW_LENGTH - lemainder
 
 
 if __name__ == '__main__':
