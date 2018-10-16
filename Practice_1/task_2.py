@@ -16,7 +16,7 @@ def main(v, t):
 
     lemainder = l % MOSCOW_LENGTH
 
-    return int(lemainder) if v >= 0 else MOSCOW_LENGTH - lemainder
+    return int(lemainder) if v >= 0 else MOSCOW_LENGTH - int(lemainder)
 
 
 if __name__ == '__main__':
