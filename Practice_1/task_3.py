@@ -30,7 +30,7 @@ def main(n):
 
     hours, memainder = full_minute // 60, full_minute % 60
 
-    return (hours, memainder)
+    return hours, memainder
 
 
 if __name__ == '__main__':

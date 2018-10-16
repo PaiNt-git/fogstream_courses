@@ -12,7 +12,7 @@ def main(n):
 
     days, homainder = hours // 24, hours % 24
 
-    return (homainder, memainder) if days >= 1 else ((hours, memainder))
+    return (homainder, memainder) if days >= 1 else (hours, memainder)
 
 
 if __name__ == '__main__':

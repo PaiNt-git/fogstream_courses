@@ -25,7 +25,7 @@ if __name__ == '__main__':
 
     vinput = None
     while vinput is None:
-        vinput = input('Введите скорость, км/ч (целое или с точкой):\n')
+        vinput = input('Введите скорость, км/ч (целое или с точкой, можно отрицательное):\n')
         try:
             vinput = float(vinput)
         except ValueError as err:
