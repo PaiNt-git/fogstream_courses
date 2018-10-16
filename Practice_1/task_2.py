@@ -38,8 +38,11 @@ if __name__ == '__main__':
         tinput = input('Введите время, ч (целое или с точкой, не отрицательное):\n')
         try:
             tinput = float(tinput)
+            if tinput < 0:
+                tinput = None
+                continue
         except ValueError as err:
-            if 'could not convert string to float' in str(err) or tinput < 0:
+            if 'could not convert string to float' in str(err):
                 tinput = None
                 continue
 
