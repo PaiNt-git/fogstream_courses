@@ -12,7 +12,7 @@ USERNAME_CHARS = WEBSITE_CHARS + "_-"
 
 
 def validate_regexp(email):
-    return bool(re.fullmatch(r'^[a-z0-9_-]+@[a-z0-9]+\.{1,1}[a-z0-9]{1,3}$',
+    return bool(re.fullmatch(r'^[a-z0-9_-]+@[a-z0-9]+\.[a-z0-9]{1,3}$',
                              email.lower(),
                              flags=re.ASCII))
 
